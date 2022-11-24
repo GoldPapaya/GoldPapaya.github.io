@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papaya Arcade</title>
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4ce5571c08.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +17,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="popup__container">
+        <div class="popup">
+            <img src="tick.png">
+            <h2>Device Compatibility</h2>
+            <p>Support for viewing this website on devices like phones or tablets has not been implemented yet.</p>
+            <p>For the best viewing experience, please consider browsing this website on a computer. Thanks!</p>
+            <button id="close">Continue</button>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo"><i class="fa-solid fa-lemon"></i>Papaya Arcade</a>
@@ -122,7 +132,24 @@
         </div>
     </div>
 
-
+    <script>
+    document.querySelector(".popup__container").style.display = "none";
+    window.addEventListener("load",
+        function() {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup__container").style.display="block";
+                    document.querySelector(".popup").style.display="block";
+                },2000
+            )
+        }
+    );
+    document.querySelector("#close").addEventListener("click",
+        function(){
+            document.querySelector(".popup").style.display = "none";
+            document.querySelector(".popup__container").style.display = "none";
+    })       
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
