@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papaya Arcade</title>
-    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4ce5571c08.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,15 +16,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="popup__container">
-        <div class="popup">
-            <img src="tick.png">
-            <h2>Device Compatibility</h2>
-            <p>Support for viewing this website on devices like phones or tablets has not been implemented yet.</p>
-            <p>For the best viewing experience, please consider browsing this website on a computer. Thanks!</p>
-            <button id="close">Continue</button>
-        </div>
-    </div>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo"><i class="fa-solid fa-lemon"></i>Papaya Arcade</a>
@@ -51,34 +41,17 @@
         </div>
     </nav>
     <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Projects, Files</h1>
-                <h2>And Much More!</h2>
-                <p>But where do I start?</p>
-                <button class="main__btn"><a href="/start.html">Right Here!</a></button>
+        <div class="main__content">
+            <!--change padding bottom for each page to adjust spacing (below line)!-->
+            <div style = "position:relative; width: 80%; left:200px; top:30px; padding-bottom: 10px">
+                <h1>Work in Progress</h1>
+                <h2 style="color:#d4ff16; font-size: 30px">List of projects/work I'm currently active on:</h2>
             </div>
-            <div class="main__img--container">
-                <img src="images/TechPic.svg" alt="pic" id="main__img">
-            </div>
-        </div>
-    </div>
-    <div class="services">
-        <h1>Questions and Contact</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Questions</h2>
-                <p>Submit a question</p>
-                <a href="/questions.html">
-                <button>Details</button>
-                </a>
-            </div>
-            <div class="services__card">
-                <h2>Contact</h2>
-                <p>Email and phone</p>
-                <a href="/contact.html">
-                <button>Details</button>
-                </a>
+            <div style = "position:relative; width: 80%; left:200px; top:30px; padding-bottom: 230px">
+                <p>Papaya Arcade v1</p>
+                <p style="color:#90daff; font-size: 20px; margin-left: 3%">Primarily focused on getting more content posted so that I can simply transfer that over to Papaya Arcade v2 when it's built. Since I started building this website, I've learned a lot of tools and technologies that will allow me to make v2 look much cooler, more user friendly, and with less spaghetti code. I hope to get started sometime this summer!</p>
+                <p>Papaya Arcade v2 landing page</p>
+
             </div>
         </div>
     </div>
@@ -93,7 +66,7 @@
                 </div>
                 <div class="footer__link--items">
                     <h2>Objectives</h2>
-                    <a href="/inprogress.html">In Progress</a>
+                    <a href="/">Goals</a>
                     <a href="/futureplans.html">Future Plans</a>
                     <a href="/changelog.html">Change Log</a>
                 </div>
@@ -102,7 +75,7 @@
                 <div class="footer__link--items">
                     <h2>Activity</h2>
                     <a href="/puzzles.html">Games & Puzzles</a>
-                    <a href="/ml_apps.html">ML Applications</a>
+                    <a href="/">ML Applications</a>
                     <a href="/learning.html">Learning</a>
                 </div>
                 <div class="footer__link--items">
@@ -120,7 +93,7 @@
                 </div>
 
                 <div class="social__icons">
-                    <a href="/" class="social__icon--link" target="_blank">
+                    <a href="https://www.youtube.com/@papaya-arcade" class="social__icon--link" target="_blank">
                         <i class="fab fa-youtube"></i>
                     </a>
                     <a href="https://linkedin.com/in/lucasc32/" class="social__icon--link" target="_blank">
@@ -134,24 +107,7 @@
         </div>
     </div>
 
-    <script>
-    document.querySelector(".popup__container").style.display = "none";
-    window.addEventListener("load",
-        function() {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup__container").style.display="block";
-                    document.querySelector(".popup").style.display="block";
-                },6000
-            )
-        }
-    );
-    document.querySelector("#close").addEventListener("click",
-        function(){
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup__container").style.display = "none";
-    })       
-    </script>
+
     <script src="app.js"></script>
 </body>
 </html>
