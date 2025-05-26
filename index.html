@@ -1,157 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papaya Arcade</title>
-    <link rel="stylesheet" href="popup.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/4ce5571c08.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="popup__container">
-        <div class="popup">
-            <img src="tick.png">
-            <h2>Device Compatibility</h2>
-            <p>Support for viewing this website on devices like phones or tablets has not been implemented yet.</p>
-            <p>For the best viewing experience, please consider browsing this website on a computer. Thanks!</p>
-            <button id="close">Continue</button>
-        </div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Lucas Crawford</h1>
+      <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo"><i class="fa-solid fa-lemon"></i>Papaya Arcade</a>
-            <div class="navbar__toggle" id="moble-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links"> Home </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/projects.html" class="navbar__links"> Projects </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/admin.html" class="navbar__links"> Admin </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="/puzzles.html" class="button"> Puzzles </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Projects, Files</h1>
-                <h2>And Much More!</h2>
-                <p>But where do I start?</p>
-                <button class="main__btn"><a href="/start.html">Right Here!</a></button>
-            </div>
-            <div class="main__img--container">
-                <img src="images/TechPic.svg" alt="pic" id="main__img">
-            </div>
-        </div>
-    </div>
-    <div class="services">
-        <h1>Questions and Contact</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Questions</h2>
-                <p>Submit a question</p>
-                <a href="/questions.html">
-                <button>Details</button>
-                </a>
-            </div>
-            <div class="services__card">
-                <h2>Contact</h2>
-                <p>Email and phone</p>
-                <a href="/contact.html">
-                <button>Details</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Website</h2>
-                    <a href="/start.html">Directory</a>
-                    <a href="/projects.html">Projects</a>
-                    <a href="https://www.youtube.com/playlist?list=PL8lbDqy-vHdAnPTIvRHxW3MoJ9Ll6HbNE" target="_blank">Demos</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Objectives</h2>
-                    <a href="/inprogress.html">In Progress</a>
-                    <a href="/futureplans.html">Future Plans</a>
-                    <a href="/changelog.html">Change Log</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Activity</h2>
-                    <a href="/puzzles.html">Games & Puzzles</a>
-                    <a href="/ml_apps.html">ML Applications</a>
-                    <a href="/learning.html">Learning</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Extras/Contact</h2>
-                    <a href="/contact.html">Get in Contact</a>
-                    <a href="/about.html">About Me</a>
-                    <a href="https://github.com/GoldPapaya" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-        <div class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="fa-solid fa-lemon"></i>Papaya Arcade</a>
-                </div>
+  </header>
 
-                <div class="social__icons">
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/lucasc32/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/GoldPapaya" class="social__icon--link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to My Profile!</h2>
+      <a href="#contact" class="btn">Get in Contact</a>
     </div>
+  </section>
 
-    <script>
-    document.querySelector(".popup__container").style.display = "none";
-    window.addEventListener("load",
-        function() {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup__container").style.display="block";
-                    document.querySelector(".popup").style.display="block";
-                },6000
-            )
-        }
-    );
-    document.querySelector("#close").addEventListener("click",
-        function(){
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup__container").style.display = "none";
-    })       
-    </script>
-    <script src="app.js"></script>
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Lucas, a rising graduate student at UC Berkeley to be studying Information Management and Systems. I recently completed my undergraduate degree in Geomatics at the University of Waterloo. My research interests are centered around predictive systems, resource optimization, and classification strategies. <br><br> Throughout my studies, I have participated in various internships ranging from fintech to gaming. My background in software automation and data science is well suited to any task where scalability is a priority. Feel free to reach out anytime via email at <a href="mailto:lucas.crawford@berkeley.edu; lucasdcrawford32@gmail.com">lucas.crawford@berkeley.edu</a> or by sending me a message <a href="#contact">below</a> if our priorities align.
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <img src="images/prodigy_logo.jpg">
+          </div>
+          <div class="timeline-content">
+            <h3>QA Analyst @ Prodigy</h3>
+            <p>September 2022 - December 2022</p>
+            <p>Team Magikarp 🐟 | Subscription & Payment</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <img src="images/paywithextend_logo.jpg">
+          </div>
+          <div class="timeline-content">
+            <h3>SDET @ Extend</h3>
+            <p>May 2023 - August 2023</p>
+            <p>Non-Fungible Pod 💳 | Virtual Cards</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <img src="images/government_of_canada_logo.jpg">
+          </div>
+          <div class="timeline-content">
+            <h3>Data Scientist @ Government of Canada</h3>
+            <p>January 2024 - April 2024</p>
+            <p>Team Data Dissemination 📊 | Patent NLP</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="images/playstation_logo.jpg">
+            </div>
+            <div class="timeline-content">
+              <h3>SDET @ PlayStation</h3>
+              <p>September 2024 - December 2024</p>
+              <p>Team Megalodons 🦈 | PlayStation Web Store</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h3>Snow Water Equivalent App</h3>
+          <p>GlobSnow v3.0 NetCDF preprocessor and visualizer</p>
+          <a href="https://github.com/GoldPapaya/swe" class="btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h3>Card Comparison Simulator</h3>
+          <p>Monte Carlo simulation of a card game with a visualizer and metrics</p>
+          <a href="https://github.com/GoldPapaya/Card-Compare" class="btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300" alt="">
+          <h3>UK Landcover Classification</h3>
+          <p>UK terrain model via supervised classification in Google Earth Engine</p>
+          <a href="https://github.com/GoldPapaya/Landcover-Classification" class="btn" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.co/e2a50bd18577e11a0a5b57d8a2a2fbf6" method="POST">
+        <div>
+            <input name="name" type="text" placeholder="Your Name" required>
+        </div>
+        <div>
+            <input name="email" type="email" placeholder="Your Email" required>
+        </div>
+        <div>
+            <textarea name="message" placeholder="Message" rows="10" cols="75" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lucas Crawford. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
